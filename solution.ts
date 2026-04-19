@@ -15,8 +15,9 @@ const reverseString = (str: string): string => {
   }
     return str.split('').reverse().join('');
 }
-// console.log(reverseString("hello"))
-// console.log(reverseString(""))
+
+
+
 // 2.Task: Print numbers from 1 to n. For multiples of 3, print "Fizz"; for multiples of 5, print "Buzz"; for multiples of both, print "FizzBuzz".
 const fizzBuzz = (n: number): string[] | string => {
     if (n < 1 || n > 100) {
@@ -37,7 +38,10 @@ const fizzBuzz = (n: number): string[] | string => {
     return result;
     
 }
-//  console.log(fizzBuzz(15))
+
+
+
+
 // 3.Find the Largest Number in an Array
 const findLargestNumber = (arr: number[]): number | null => {
     if (arr.length === 0) return null;
@@ -49,7 +53,9 @@ const findLargestNumber = (arr: number[]): number | null => {
     }
     return largest;
 }
-// console.log(findLargestNumber([3, 5, 7, 2, 8]))
+
+
+
 // 4. Check for Palindrome
 const isPalindrome = (str: string): boolean => {
     if (str.length < 1) {
@@ -64,6 +70,10 @@ const isPalindrome = (str: string): boolean => {
 }
 //  console.log(isPalindrome('!!!'))
 // console.log(isPalindrome('hello'))
+
+
+
+
 // 5.. Sum of Array Elements
 const sumOfArray = (arr: number[]): number | string => {
      if (arr.length > 500) {
@@ -80,7 +90,9 @@ const sumOfArray = (arr: number[]): number | string => {
     }
     return sum;
 }
-//  console.log(sumOfArray([1, 2, 3, 4,16, 5, 6, 7, 8, 9, 10]))
+
+
+
 // 6. Count Vowels
 const countVowels = (str: string): number|string => {
     if (!/^[a-zA-Z\s]*$/.test(str)) {
@@ -95,7 +107,9 @@ const countVowels = (str: string): number|string => {
     }
     return count;
 }
-//    console.log(countVowels('Hellooooo123456'))
+
+
+
 // 7. Factorial Calculation
 const factorial = (n: number): number | string => {
      if (n < 0 || n >= 13) {
@@ -111,6 +125,9 @@ const factorial = (n: number): number | string => {
   return result;
 }
 //  console.log(factorial(13))
+
+
+
 // 8. Fibonacci Sequence
 const fibonacci = (n: number): number[]|string => {
   
@@ -137,6 +154,9 @@ const fibonacci = (n: number): number[]|string => {
   return result;
 };
 //   console.log(fibonacci(4))
+
+
+
 // 10. Find the Minimum in an Array
 const findMin = (arr: number[]): number | string => {
     if (arr.length === 0) {
@@ -152,6 +172,10 @@ const findMin = (arr: number[]): number | string => {
 }
 // console.log(findMin([3, 1, 5, 2]))
 // console.log(findMin([1,1,1,1]))
+
+
+
+
 // 11. Multiplication Table
 const multiplicationTable = (n: number): string[]|string => {
     if(n < 1 || n > 100) {
@@ -166,6 +190,11 @@ const multiplicationTable = (n: number): string[]|string => {
   return result;
 };
 // console.log(multiplicationTable(101))
+
+
+
+
+
 // 12. Check Prime Number
 const isPrimeNumber = (n: number): boolean|string => {
     if(n < 1 || n > 1000) {
@@ -182,17 +211,26 @@ const isPrimeNumber = (n: number): boolean|string => {
   return true;
 };
 // console.log(isPrimeNumber(29))
+
+
+
 // 13. Remove Duplicates from a List
 const removeDuplicates = (nums: number[]): number[] => {
   return [...new Set(nums)];
 };
 // console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5]));
+
+
 // 14. Convert Celsius to Fahrenheit
 const celsiusToFahrenheit = (celsius: number): number => {
   return (celsius * 9) / 5 + 32;
 };
 //  console.log(celsiusToFahrenheit(100))
-//  console.log(celsiusToFahrenheit(-10));  
+//  console.log(celsiusToFahrenheit(-10));
+
+
+
+
 //  15. Count Occurrences of a Character
 const countCharacter = (s: string, c: string): number => {
   let count = 0;
